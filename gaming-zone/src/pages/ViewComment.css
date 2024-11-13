@@ -1,0 +1,29 @@
+.CrewmateDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .CrewmateDetail h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .CrewmateDetail h3 {
+    font-size: 20px;
+    margin: 5px 0;
+    color: black;
+    text-align: center;
+  }
+  
+  .crewmate {
+    height: 350px;
+    width: 250px;
+}

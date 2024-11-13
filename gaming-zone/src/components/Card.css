@@ -1,0 +1,47 @@
+.Card {
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(153, 153, 153, 0.497);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+    width: 400px;
+    text-align: center;
+}
+
+.name {
+    color: beige;
+    padding-left: 30px;
+}
+
+.attribute {
+    color:white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.moreButton {
+    width: 30px;
+    float:right;
+    height: 40px;
+
+}
+.moreButton:hover {
+    cursor: pointer;
+}
+
+.Card:hover {
+    transform: translateY(-5px);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.crewmate {
+    padding-right: 10px;
+    height: 350px;
+    width: 250px;
+}

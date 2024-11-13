@@ -1,0 +1,117 @@
+/* General styling for the form container */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: lightgrey;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Input fields and textareas */
+input[type="text"], input[type="number"], input[type="radio"], textarea {
+    width: 100%;
+    height: 45px;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+li {
+    display: inline-block;
+    margin-right: 15px;
+    color: darkblue;
+    text-shadow: 1px 1px 1px white;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #646cff;
+    transform: scale(1.05);
+}
+
+input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(100, 102, 255, 0.5);
+}
+
+/* Styling for radio buttons checked state */
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #646cff;
+}
+
+input[type="radio"]:focus {
+    outline: none;
+    box-shadow: 0 0 3px rgba(100, 102, 255, 0.5);
+}
+
+/* Styling for input elements when focused */
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #646cff;
+    box-shadow: 0 0 5px rgba(100, 102, 255, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    input[type="text"], input[type="number"], input[type="submit"] {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    textarea {
+        font-size: 16px;
+    }
+}
