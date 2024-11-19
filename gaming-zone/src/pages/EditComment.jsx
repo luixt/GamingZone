@@ -29,14 +29,32 @@ const EditComment = ({data}) => {
 
     const deleteThread = async (event) => {
         event.preventDefault();
-
-        await supabase
+    
+        // Delete all replies associated with the thread
+        const { error: deleteRepliesError } = await supabase
+            .from('Replies')
+            .delete()
+            .eq('thread_id', id);
+    
+        if (deleteRepliesError) {
+            console.error('Error deleting replies:', deleteRepliesError);
+            return; // Stop further execution if there's an error deleting replies
+        }
+    
+        // Delete the thread itself
+        const { error: deleteThreadError } = await supabase
             .from('Threads')
             .delete()
             .eq('id', id);
-
+    
+        if (deleteThreadError) {
+            console.error('Error deleting thread:', deleteThreadError);
+            return;
+        }
+    
+        // Redirect to home page after successful deletion
         window.location = "/";
-    }
+    };
 
     const updateThread = async (event) => {
         event.preventDefault();
