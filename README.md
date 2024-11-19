@@ -2,7 +2,7 @@
 
 Submitted by: **Luis Delgado**
 
-This web app: **insert description**
+This web app: **Community gathering social media interface exclusively for video games for people to share thoughts**
 
 Time spent: **15** hours spent in total
 
@@ -35,13 +35,24 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [x] it is allowed to edit or delete a comment.
+* [x] It is allowed to edit or delete a comment.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Create Post & View Details
+<img src='https://i.imgur.com/DBl23XV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough 1' />
+
+Filtering / Likes / Commenting
+<img src='https://i.imgur.com/wd7vCC4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough 2' />
+
+Post Editing
+<img src='https://i.imgur.com/8DjPOX1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough 3' />
+
+Post Deletion
+<img src='https://i.imgur.com/dOqMEk5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough 4' />
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIFs created with ScreenToGif
