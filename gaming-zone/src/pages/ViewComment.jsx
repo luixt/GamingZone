@@ -28,10 +28,12 @@ const ViewComment = () => {
   return (
     <div >
       {comment ? (
-        <div className="CrewmateDetail">
+        <div className="CommentDetail">
           <h2>{comment.title}</h2>
           <p>{comment.description}</p>
-          <h3 >{comment.image}</h3>
+          <div className='center-img'>
+            <img alt="Comment Image" src={comment.image}/>
+          </div>
           <h3>{"Likes: " + comment.likes}</h3>
         </div>
       ) : (
