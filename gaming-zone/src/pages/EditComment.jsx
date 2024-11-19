@@ -64,15 +64,22 @@ const EditComment = ({data}) => {
 
             <form>
                 <label >Title</label>
-                <input type="text" id="title" name="title" value={comment.title} onChange={handleChange} /><br />
+                <input className="text-box-short" type="text" id="title" name="title" value={comment.title} onChange={handleChange} /><br />
                 <br/>
 
-                <label >Description</label>
-                <input type="text" id="description" name="description" value={comment.description} onChange={handleChange} /><br />
-                <br/>
+                <label>Description</label>
+                <textarea 
+                    className="text-box-big" 
+                    id="description" 
+                    name="description" 
+                    value={comment.description} 
+                    onChange={handleChange} 
+                    rows="5"
+                /><br />
+                <br />
 
                 <label >Image</label>
-                <input type="text" id="image" name="image" value={comment.image} onChange={handleChange} /><br />
+                <input className="text-box-short" type="text" id="image" name="image" value={comment.image} onChange={handleChange} /><br />
                 <br/>
 
                 <input type="submit" value="Update" onClick={updateThread}/>

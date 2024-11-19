@@ -1,36 +1,68 @@
 .App {
-  font-family:Avenir, "Century Gothic", sans-serif;
-  font-weight:100; 
-  font-style:normal;
+  font-family: Avenir, "Century Gothic", sans-serif;
+  font-weight: 100;
+  font-style: normal;
   font-size: calc(10px + 2vmin);
   color: white;
-  justify-content: center;
   background-color: lightblue;
-  padding:20px;
+  padding: 20px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column; 
   align-items: center;
-  justify-content: center;
+  margin-top: 80px; 
+  box-sizing: border-box; 
 }
 
-.header{
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: purple;
+  color: white;
+  padding: 20px;
   width: 100%;
-  color:white;
-  text-align: center;
+  box-sizing: border-box; 
+  position: fixed; 
+  top: 0; 
+  z-index: 1; 
+}
+
+.header h1 {
+  margin: 0; 
+  font-size: 1.8rem;
+}
+
+.header .link-group {
+  display: flex; 
+  gap: 10px; 
 }
 
 .headerBtn {
-  margin-bottom: 50px;
-  margin-right: 10px;
+  margin: 0; 
 }
 
-.ReadPosts {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+.header a {
+  text-decoration: none; 
 }
+
+.search-bar {
+  margin-right: 20px; 
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 400px !important; 
+  background-color: #f5f6fa; 
+  color: #2c3e50; 
+  transition: border-color 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.search-bar:focus {
+  border-color: #6c5ce7; 
+  box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+}
+
 
 button {
   border-radius: 8px;
@@ -44,6 +76,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }

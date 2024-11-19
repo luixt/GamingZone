@@ -1,47 +1,64 @@
 .Card {
-    backdrop-filter: blur(2px);
-    border: 1px solid rgba(153, 153, 153, 0.497);
+    backdrop-filter: blur(4px);
+    background-color: #2c2c54; 
+    border: 1px solid #6c5ce7;
     border-radius: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
+    padding: 20px;
     margin-bottom: 25px;
-    width: 400px;
-    text-align: center;
-}
-
-.name {
-    color: beige;
-    padding-left: 30px;
-}
-
-.attribute {
-    color:white;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
-.moreButton {
-    width: 30px;
-    float:right;
-    height: 40px;
-
-}
-.moreButton:hover {
-    cursor: pointer;
+    width: 1000px; 
+    text-align: left; 
+    color: #f5f6fa; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
 }
 
 .Card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.moreButton {
+    width: 30px;
+    float: right;
+    height: 30px; 
+    margin-top: -5px; 
+}
+
+.moreButton:hover {
+    cursor: pointer;
+    filter: brightness(1.2); 
 }
 
 .card-link {
     text-decoration: none;
     color: inherit;
+    display: block; 
+    padding-bottom: 35px;
 }
 
-.crewmate {
-    padding-right: 10px;
-    height: 350px;
-    width: 250px;
+.likes {
+    display: flex;
+    align-items: center; 
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    gap: 5px; 
 }
+
+.heart {
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+
+.heart:active {
+    transform: scale(1.2) translateY(-10px); 
+}
+
+.time {
+    font-size: 14px;
+    color: #aaa; 
+    margin-top: 5px;
+    font-style: italic;
+  }
